@@ -51,6 +51,11 @@ namespace FinalProject.Controllers
         { 
             return View();
         }
+
+        public IActionResult Markets()
+        {
+            return View();
+        }
     }
 }
 
