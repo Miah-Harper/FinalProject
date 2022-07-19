@@ -57,6 +57,11 @@ namespace FinalProject.Models
             _conn.Execute("UPDATE products SET Name = @name, Price = @price WHERE ProductID = @id",
              new { name = product.Name, price = product.Price, id = product.ProductID });
         }
+
+        public void ViewPictures(ShopProduct product)
+        {
+             _conn.Execute("SELECT * FROM Pictures;");
+        }
     }
 }
 

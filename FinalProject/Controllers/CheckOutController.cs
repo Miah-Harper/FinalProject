@@ -3,18 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-
-
+using Microsoft.Extensions.Logging;
 
 namespace FinalProject.Controllers
 {
-    public class CustCheckOutController : Controller
+    public class CheckOutController : Controller
     {
-        // GET: /<controller>/
-        public IActionResult Index()
+        private readonly ILogger<CheckOutController> _logger;
+
+        public CheckOutController(ILogger<CheckOutController>logger)
         {
-            return View();
+            _logger = logger;
         }
+
+
     }
 }
 

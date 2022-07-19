@@ -15,10 +15,11 @@ namespace FinalProject.Models
             public IEnumerable<Category> GetCategories();
             public ShopProduct AssignCategory();
             public void DeleteProduct(ShopProduct product);
-        
+            //public void ViewPictures(ShopProduct product);
 
 
     }
+
 
 
 }
