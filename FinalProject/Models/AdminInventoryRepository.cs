@@ -5,12 +5,12 @@ using Dapper;
 
 namespace FinalProject.Models
 {
-    public class ShopProductRepository : IShopProductRepository
+    public class AdminInventoryRepository : IAdminInventoryRepository
     {
 
         private readonly IDbConnection _conn;
 
-        public ShopProductRepository(IDbConnection conn)
+        public AdminInventoryRepository(IDbConnection conn)
         {
             _conn = conn;
         }
@@ -58,10 +58,7 @@ namespace FinalProject.Models
              new { name = product.Name, price = product.Price, id = product.ProductID });
         }
 
-        public void ViewPictures(ShopProduct product)
-        {
-             _conn.Execute("SELECT * FROM Pictures;");
-        }
+       
     }
 }
 

@@ -5,12 +5,15 @@ namespace FinalProject.Models
 {
     public class Category
     {
-        public int CategoryName { get; set; }
+
+        public int CategoryID { get; set; }
         public string Name { get; set; }
         public int ProductID { get; set; }
         public int Price { get; set; }
+        public string Description { get; set; }
+        
 
-        public IEnumerable<Category> Categories { get; set; }
+        public List<ShopProduct> ShopProduct { get; set; }
     }
 }
 
