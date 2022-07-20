@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace FinalProject.Models.Mocks
 {
-    public class MockCategoryRepo : ICatergoryRepo
+    public class CategoryRepo : ICategoryRepo
     {
 
 

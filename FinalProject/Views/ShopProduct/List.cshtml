@@ -1,0 +1,16 @@
+﻿@using FinalProject.Models
+@model IEnumerable<ShopProduct>
+
+<div>
+    <h2>Shop All Products</h2>
+</div>
+
+@{
+    foreach (var shop in Model)
+            {
+                <div>
+                    <h4>Product Name: @shop.Name</h4>
+                    <p>Price: @shop.Price.ToString("c")</p>
+                </div>
+            }
+    }

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace FinalProject.Models.Mocks
 {
-    public class MockShopProductRepository : IShopProductRepo
+    public class ShopProductRepository : IShopProductRepo
     {
-        public MockShopProductRepository()
+        public ShopProductRepository()
         {
         }
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace FinalProject.Models
 {
-    public interface ICatergoryRepo
+    public interface ICategoryRepo
     {
         IEnumerable<Category> Categories { get;  }
     }
