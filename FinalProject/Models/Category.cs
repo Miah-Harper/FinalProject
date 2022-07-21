@@ -13,7 +13,7 @@ namespace FinalProject.Models
         public string Description { get; set; }
         
 
-        public List<ShopProduct> ShopProduct { get; set; }
+        public List<Product> Product { get; set; }
     }
 }
 

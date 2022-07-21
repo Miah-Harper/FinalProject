@@ -34,7 +34,7 @@ namespace FinalProject.Controllers
 
         public IActionResult UpdateProduct(int id)
         {
-            ShopProduct prod = repo.GetProduct(id);
+            Product prod = repo.GetProduct(id);
             if (prod == null)
             {
                 return View("ProductNotFound");
@@ -42,7 +42,7 @@ namespace FinalProject.Controllers
             return View(prod);
         }
 
-        public IActionResult UpdateProductToDatabase(ShopProduct product)
+        public IActionResult UpdateProductToDatabase(Product product)
         {
             repo.UpdateProduct(product);
 
@@ -55,13 +55,13 @@ namespace FinalProject.Controllers
             return View(prod);
         }
 
-        public IActionResult InsertProductToDatabase(ShopProduct productToInsert)
+        public IActionResult InsertProductToDatabase(Product productToInsert)
         {
             repo.InsertProduct(productToInsert);
             return RedirectToAction("Index");
         }
 
-        public IActionResult DeleteProduct(ShopProduct product)
+        public IActionResult DeleteProduct(Product product)
         {
             repo.DeleteProduct(product);
             return RedirectToAction("Index");

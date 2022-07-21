@@ -7,14 +7,14 @@ namespace FinalProject.Models
     {
  
         
-            public IEnumerable<ShopProduct> GetAllProducts();
+            public IEnumerable<Product> GetAllProducts();
 
-            public ShopProduct GetProduct(int id);
-            public void UpdateProduct(ShopProduct product);
-            public void InsertProduct(ShopProduct productToInsert);
+            public Product GetProduct(int id);
+            public void UpdateProduct(Product product);
+            public void InsertProduct(Product productToInsert);
             public IEnumerable<Category> GetCategories();
-            public ShopProduct AssignCategory();
-            public void DeleteProduct(ShopProduct product);
+            public Product AssignCategory();
+            public void DeleteProduct(Product product);
             
 
 

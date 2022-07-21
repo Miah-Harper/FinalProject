@@ -4,7 +4,7 @@ using System.Drawing;
 
 namespace FinalProject.Models
 {
-    public class ShopProduct
+    public class Product
     {
         public int ProductID { get; set; }
         public string Name { get; set; }

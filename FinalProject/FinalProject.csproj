@@ -31,6 +31,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\Mocks\" />
-    <Folder Include="Views\ShopProduct\" />
+    <Folder Include="Views\Product\" />
   </ItemGroup>
 </Project>

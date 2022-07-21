@@ -10,21 +10,21 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FinalProject.Controllers
 {
-    public class ShopProductController : Controller
+    public class ProductController : Controller
     {
         private readonly ICategoryRepo _categoryRepo;
-        private readonly IShopProductRepo _shopProductRepo;
+        private readonly IProductRepo _ProductRepo;
 
-        public ShopProductController(ICategoryRepo categoryRepo, IShopProductRepo shopProductRepo)
+        public ProductController(ICategoryRepo categoryRepo, IProductRepo productRepo)
         {
 
             _categoryRepo = categoryRepo;
-            _shopProductRepo = shopProductRepo;
+            _ProductRepo = productRepo;
         }
 
         public ViewResult List()
         {
-            var products = _shopProductRepo.ShopProducts;
+            var products = _ProductRepo.Product;
             return View(products);
         }
         

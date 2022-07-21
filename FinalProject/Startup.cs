@@ -34,7 +34,7 @@ namespace FinalProject
                 return conn;
             });
 
-            services.AddTransient<IShopProductRepo, ShopProductRepository>();
+            services.AddTransient<IProductRepo, ProductRepo>();
             services.AddTransient<ICategoryRepo, CategoryRepo>();
             services.AddControllersWithViews();
         }
