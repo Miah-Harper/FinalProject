@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
+using Dapper;
 using FinalProject.Models;
 
 namespace FinalProject.Models.Mocks
@@ -9,6 +11,12 @@ namespace FinalProject.Models.Mocks
     public class ProductRepo : IProductRepo
     {
         private readonly ICategoryRepo _categoryRepo = new CategoryRepo();
+        private readonly IDbConnection _conn;
+
+        public ProductRepo(IDbConnection conn)
+        {
+            _conn = conn;
+        }
 
         public IEnumerable<Product> Product
         {
@@ -64,6 +72,11 @@ namespace FinalProject.Models.Mocks
      public IEnumerable<Product> Products { get; }
         IEnumerable<Product> IProductRepo.Product { get ; set; }
 
-       
+
+        public  IEnumerable<Product> GetAllProducts()
+        {
+            return _conn.Query<Product>("SELECT * FROM products");
+        }
+
     }
 }

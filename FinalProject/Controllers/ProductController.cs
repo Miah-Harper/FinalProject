@@ -24,7 +24,7 @@ namespace FinalProject.Controllers
 
         public IActionResult List()
         {
-            var products = _ProductRepo.Product;
+            var products = _ProductRepo.GetAllProducts();
             return View(products);
         }
         
