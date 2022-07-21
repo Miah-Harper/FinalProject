@@ -6,11 +6,11 @@
 </div>
 
 @{
-    foreach (var shop in Model)
+    foreach (var product in Model)
             {
                 <div>
-                    <h4>Product Name: @shop.Name</h4>
-                    <p>Price: @shop.Price.ToString("c")</p>
+                    <h4>Product Name: @product.Name</h4>
+                    <p>Price: @product.Price.ToString()</p>
                 </div>
             }
     }

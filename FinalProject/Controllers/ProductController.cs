@@ -22,7 +22,7 @@ namespace FinalProject.Controllers
             _ProductRepo = productRepo;
         }
 
-        public ViewResult List()
+        public IActionResult List()
         {
             var products = _ProductRepo.Product;
             return View(products);

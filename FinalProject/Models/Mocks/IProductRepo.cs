@@ -6,7 +6,7 @@ namespace FinalProject.Models
     public interface IProductRepo
     {
         IEnumerable<Product> Product { get; set; }
-        Product GetProductID(int productId);
+        /*Product GetProductID(int productId);*/
     }
 }
 
