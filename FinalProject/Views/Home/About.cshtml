@@ -2,19 +2,24 @@
     ViewData["Title"] = "";
 }
 <h1>@ViewData["Title"]</h1>
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" />
+<link rel="stylesheet" type="text/css" href="maincss" />
 
+<!--<p style="font-size:small; text-align:center; font-family:monospace">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />-->
+    <div class="aboutMe">
+        <p style="font-size:small; text-align:center; font-family:monospace">
 
-<p style="font-size:small; text-align:center; font-family:monospace">
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
     My shop, City Bones, is a combination of macrame, and jewelry with animal bones incorporated.
     <br />
     All bones are responsibly sourced and cleaned by me.
@@ -26,14 +31,17 @@
     them that I loved and cared for them. Over the years I started incorporating them into my art as a
     <br />way to appreciate  and honor them in a new way. And now I want others to appreciate their beauty as much as I do!
     <br>
-</p>
-    
-   <h5 style="text-align: center; font-family:monospace"> **Disclaimer**</h5>
- <p style="font-family:monospace; text-align:center; font-size: small">  With the nature of my work, each skull, vertebrates and other bones will have slight variations in color,
+    </p>
+</div>
+
+<h5 style="text-align: center; font-family:monospace"> **Disclaimer**</h5>
+<p style="font-family:monospace; text-align:center; font-size: small">
+    With the nature of my work, each skull, vertebrates and other bones will have slight variations in color,
     <br />shapes and sizes from what’s pictured.
     <br />I take a lot of pride in my work and will not sell anything I feel are in poor condition.
     <br />My pieces can also be quite delicate, so please be careful!
-    <br />I am not reliable for any damages after purchase.</p>
+    <br />I am not reliable for any damages after purchase.
+</p>
 
 
 
@@ -41,13 +49,23 @@
 <style>
     body {
         background-image: url('https://tinypic.host/images/2022/07/14/botanical-golden-frame_53876-91336.jpg');
-       
         background-size: cover;
         background-position: center;
     }
 
+    .aboutMe {
+        margin-top: 200px;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        justify-content: center;
+        flex-direction: column;
+    }
 
     img {
         border-radius: 50%;
     }
+
+    
+
 </style>

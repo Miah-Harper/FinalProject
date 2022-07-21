@@ -1,13 +1,6 @@
-﻿body {
+﻿.footer {
+    position: fixed;
+    text-align: center;
+    bottom: 0px;
+    width: 100%;
 }
-
-.contactMe {
- 
-    display: flex;
-    align-items: center;
-    
-    justify-content: center;
-    flex-direction: column;
-}
-
-
