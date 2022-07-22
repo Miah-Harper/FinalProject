@@ -18,7 +18,7 @@ namespace FinalProject.Models.Mocks
             _conn = conn;
         }
 
-        public IEnumerable<Product> Product
+      public IEnumerable<Product> Product
         {
             get
 
@@ -77,6 +77,11 @@ namespace FinalProject.Models.Mocks
         {
             return _conn.Query<Product>("SELECT * FROM products");
         }
-
+        /*public IEnumerable<Product> GetAllPictures()
+        {
+            return _conn.Query<Product>("SELECT * from pictures");
+        }*/
     }
+
+    
 }

@@ -8,6 +8,7 @@ namespace FinalProject.Models
         IEnumerable<Product> Product { get; set; }
         /*Product GetProductID(int productId);*/
         public IEnumerable<Product> GetAllProducts();
+       /* public IEnumerable<Product> GetAllPictures();*/
     }
 }
 

@@ -18,7 +18,7 @@
         <td>@product.Price</td>
         <td>@product.StockLevel</td>
         <td>@product.OnSale</td>
-        <td><a href="/ShopProduct/UpdateProduct/@product.ProductID">Update this product</a></td>
+        <td><a href="/AdminInventory/UpdateProduct/@product.ProductID">Update this product</a></td>
         <td>
             @using (Html.BeginForm("DeleteProduct", "Product", "Post"))
             {

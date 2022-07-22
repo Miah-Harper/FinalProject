@@ -17,6 +17,7 @@ namespace FinalProject.Models
         public int StockLevel { get; set; }
         public string OnSale { get; set; }
         public bool InStock { get; set; }
+        //public string Pictures { get; set;}
 
         public IEnumerable<Category> Categories { get; set; }
     }

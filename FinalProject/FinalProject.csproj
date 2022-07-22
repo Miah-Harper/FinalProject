@@ -13,7 +13,6 @@
     <None Remove="Microsoft.VisualStudio.Web.CodeGeneration.Design" />
     <None Remove="Dapper" />
     <None Remove="MySql.Data" />
-    <None Remove="Views\Home\Images\" />
     <None Remove="Models\Checkout\" />
   </ItemGroup>
   <ItemGroup>
@@ -25,7 +24,6 @@
     <PackageReference Include="MySql.Data" Version="8.0.29" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Views\Home\Images\" />
     <Folder Include="Models\Checkout\" />
     <Folder Include="Views\Product\" />
   </ItemGroup>

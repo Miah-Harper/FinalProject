@@ -36,6 +36,7 @@ namespace FinalProject
 
             services.AddTransient<IProductRepo, ProductRepo>();
             services.AddTransient<ICategoryRepo, CategoryRepo>();
+            services.AddTransient<IAdminInventoryRepository, AdminInventoryRepository>();
             services.AddControllersWithViews();
         }
 
