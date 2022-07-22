@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using FinalProject.Models;
+using FinalProject.Models.Mocks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -33,7 +34,8 @@ namespace FinalProject
                 return conn;
             });
 
-            services.AddTransient<IShopProductRepository, ShopProductRepository>();
+            services.AddTransient<IProductRepo, ProductRepo>();
+            services.AddTransient<ICategoryRepo, CategoryRepo>();
             services.AddControllersWithViews();
         }
 

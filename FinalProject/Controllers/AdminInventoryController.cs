@@ -9,11 +9,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FinalProject.Controllers
 {
-    public class ProductController : Controller
+    public class AdminInventoryController : Controller
     {
-        private IProductRepo repo;
+        private IAdminInventoryRepository repo;
 
-        public ProductController(IProductRepo repo)
+        public AdminInventoryController(IAdminInventoryRepository repo)
         {
             this.repo = repo;
         }
@@ -68,4 +68,5 @@ namespace FinalProject.Controllers
         }
     }
 }
+
 

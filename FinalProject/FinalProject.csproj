@@ -27,5 +27,6 @@
   <ItemGroup>
     <Folder Include="Views\Home\Images\" />
     <Folder Include="Models\Checkout\" />
+    <Folder Include="Views\Product\" />
   </ItemGroup>
 </Project>
