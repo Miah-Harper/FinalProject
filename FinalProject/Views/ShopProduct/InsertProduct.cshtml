@@ -1,8 +1,8 @@
-﻿@model ShopProduct
+﻿@model Product
 
 <h2>Create a New Product</h2>
 
-@using (Html.BeginForm("InsertProductToDatabase", "ShopProduct", "Post"))
+@using (Html.BeginForm("InsertProductToDatabase", "Product", "Post"))
 {
     <input asp-for="ProductID" type="hidden" value="" />
     <label asp-for="Name" class="control-label">Name</label>

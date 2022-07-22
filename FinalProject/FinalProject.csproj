@@ -24,7 +24,6 @@
     <PackageReference Include="MySql.Data" Version="8.0.29" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Views\ShopProduct\" />
     <Folder Include="Views\Home\Images\" />
   </ItemGroup>
 </Project>
